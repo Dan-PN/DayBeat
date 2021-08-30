@@ -4,3 +4,4 @@ access*
 *.json
 *.csv
 *.xlsx
+*.cache
