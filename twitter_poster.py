@@ -1,11 +1,13 @@
-
-# %%
-import pandas as pd
-import tweepy
-import json
-
-
 def post_tweet(input_database="top_news_songs_DB.csv", access_tokens="access_twitter.json"):
+    """[Posts one Tweet based on latest flag and highest similarity score]
+
+    Args:
+        input_database (str, optional): [location of processed database csv file]. Defaults to "top_news_songs_DB.csv".
+        access_tokens (str, optional): [location of json file with twitter API access tokens]. Defaults to "access_twitter.json".
+    """
+    import pandas as pd
+    import tweepy
+    import json
 
     data_input = pd.read_csv(input_database)
     with open(access_tokens) as jsonFile:

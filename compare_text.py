@@ -15,7 +15,7 @@ def compare_segments(input_A="Songs_database.csv", input_B="output.csv", compare
     """[Encodes Sentences using transformers, calculates cosine similarity. Records/updates top results higher then threshold.]
 
     Args:
-        input_A (str, optional): [filepath of csv A to compare]. Defaults to "Songs_database.csv".
+        input_A (str, optional): [filepath of csv A to compare]. Defaults to "".
         input_B (str, optional): [filepath of csv B to compare]. Defaults to "output.csv".
         compare_A (str, optional): [Column from input A to compare]. Defaults to "Lyrics".
         compare_B (str, optional): [Column from input B to compare]. Defaults to "title".
@@ -94,7 +94,3 @@ def compare_segments(input_A="Songs_database.csv", input_B="output.csv", compare
     else:
         result.to_csv(output_file, index=False)
         print("DB created")
-
-
-# %%
-compare_segments()
