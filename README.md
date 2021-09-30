@@ -3,10 +3,10 @@
 
 
 - Posts Top Recomendation on Twitter Daily
-- Runs on Airflow
+- Runs on Airflow (Daily)
 - Extracts Daily News from Google News Feed
-- Extracts Songs from Billboard 100, Lyrics from Genius
-- Uses NLP Model to calculate News-Song Similarity
+- Extracts Songs Titles from Billboard 100, Extracts Lyrics from Genius Website
+- Uses NLP Model to calculate News-Song Similarity (Cosine)
 - Uses Spotify API to Extract Song URL
 - Manual Feed Refresh on Tableau Dashboard
 
